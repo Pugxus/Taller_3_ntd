@@ -48,93 +48,92 @@
                         </ul>
                     </div>
                 </nav>
-                <div class="col-md-10">
-                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Agente</li>
-                        </ol>
-                    </nav>
-                    <div class="col-auto d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#nuevoUsuarioModal">
-                            Nuevo agente
-                        </button>
-                    </div>
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-md-8">
-                            <table class="table table-striped table-responsive" id="usuarios">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Identificación</th>
-                                        <th scope="col">Correo</th>
-                                        <th scope="col">VHUR</th>
-                                        <th scope="col">Telefono</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                </tbody>
-                            </table>
-                            <p id="texto1"></p>
-                        </div>
-                    </div>
-
+            </div>
+            <div class="col-md-10">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Agente</li>
+                    </ol>
+                </nav>
+                <div class="col-auto d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#nuevoUsuarioModal">
+                        Nuevo agente
+                    </button>
                 </div>
-                <!-- Modal -->
-                <div class="modal fade" id="nuevoUsuarioModal" tabindex="-1" aria-labelledby="nuevoUsuarioLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="nuevoUsuarioLabel">Agregar Agente</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="nombre" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="nombre">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8">
+                        <table class="table table-striped table-responsive" id="usuarios">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Identificación</th>
+                                    <th scope="col">Correo</th>
+                                    <th scope="col">VHUR</th>
+                                    <th scope="col">Telefono</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="identificacion" class="form-label">Identificación</label>
-                                        <input type="number" class="form-control" id="identificacion">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="correo" class="form-label">Correo</label>
-                                        <input type="mail" class="form-control" id="correo">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="vhur" class="form-label">VHUR</label>
-                                        <input type="number" class="form-control" id="vhur">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="telefono" class="form-label">Telefono</label>
-                                        <input type="number" class="form-control" id="telefono">
-                                    </div>
-
-                                </form>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Cancelar</button>
-                                <button type="button" class="btn btn-primary" id="nuevoUsuario">Guardar</button>
-                            </div>
-                        </div>
+                            </tbody>
+                        </table>
+                        <p id="texto1"></p>
                     </div>
                 </div>
-                <script src="https://code.jquery.com/jquery-3.6.4.js"
-                    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-                <script src="js/functions.js"></script>
-
 
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="nuevoUsuarioModal" tabindex="-1" aria-labelledby="nuevoUsuarioLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="nuevoUsuarioLabel">Agregar Agente</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre">
+
+                                </div>
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación</label>
+                                    <input type="number" class="form-control" id="identificacion">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo</label>
+                                    <input type="mail" class="form-control" id="correo">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="vhur" class="form-label">VHUR</label>
+                                    <input type="number" class="form-control" id="vhur">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Telefono</label>
+                                    <input type="number" class="form-control" id="telefono">
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary" id="nuevoUsuario">Guardar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.4.js"
+                integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+            <script src="js/functions.js"></script>
+
 
         </div>
+
+    </div>
 
     </div>
     </div>
